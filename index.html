@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TECHFEST // 26 — Prototype the Future</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<header>
+  <div class="logo">TECHFEST<span>/26</span></div>
+  <nav class="links">
+    <a href="#about">About</a>
+    <a href="#events">Events</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#speakers">Speakers</a>
+  </nav>
+  <a href="#register" class="nav-cta">Register</a>
+  <div id="menu-toggle"><span></span><span></span><span></span></div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero" style="padding-top:0;">
+    <div class="eyebrow mono">04 — 07 FEB · CENTRAL CAMPUS GROUNDS</div>
+    <h1>THE FUTURE, <span class="out">PROTOTYPED</span> LIVE.</h1>
+    <p class="hero-sub">Techfest is four days of built things — robots that race, code that ships, drones that dogfight, and ideas that don't survive the first prototype. Come build the thing you can't stop thinking about.</p>
+    <div class="hero-meta">
+      <div><span class="mono">Attendees</span><span class="val">40,000+</span></div>
+      <div><span class="mono">Live Events</span><span class="val">120+</span></div>
+      <div><span class="mono">Prize Pool</span><span class="val">₹50,00,000</span></div>
+      <div><span class="mono">Days</span><span class="val">04</span></div>
+    </div>
+    <div class="scroll-cue"><div class="bar"></div>SCROLL</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div>
+        <span class="kicker">01 / Manifesto</span>
+        <p class="about-statement">Techfest isn't a conference you sit through — it's a system you plug into. <em>Every hallway is a build station</em>, every stage is a live test bench, and every attendee leaves having shipped something that didn't exist four days earlier.</p>
+      </div>
+      <div class="stat-list reveal">
+        <div class="stat-row"><span class="label">Founded</span><span class="num">2009</span></div>
+        <div class="stat-row"><span class="label">Countries repped</span><span class="num">40<span>+</span></span></div>
+        <div class="stat-row"><span class="label">Build hours</span><span class="num">72<span>hrs</span></span></div>
+        <div class="stat-row"><span class="label">Judges & mentors</span><span class="num">300<span>+</span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events">
+    <div class="section-head">
+      <div>
+        <span class="kicker">02 / Modules</span>
+        <h2>Eight arenas. Pick your fight.</h2>
+      </div>
+      <p>Each module runs independently across the four days — solo or in teams, beginner tracks and open pro divisions.</p>
+    </div>
+    <div class="event-grid" id="event-grid"></div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <div class="section-head">
+      <div>
+        <span class="kicker">03 / Sequence</span>
+        <h2>Four days, one build cycle.</h2>
+      </div>
+      <p>The festival runs on a fixed circuit — ignition, build, clash, reveal. Every module maps to one of these phases.</p>
+    </div>
+    <div class="timeline" id="timeline-list"></div>
+  </section>
+
+  <!-- SPEAKERS -->
+  <section id="speakers">
+    <div class="section-head">
+      <div>
+        <span class="kicker">04 / On the Mainstage</span>
+        <h2>People building the next base layer.</h2>
+      </div>
+      <p>Four keynotes across four mornings — robotics, applied ML, embedded security, and spatial computing.</p>
+    </div>
+    <div class="speaker-grid" id="speaker-grid"></div>
+  </section>
+
+  <!-- REGISTER -->
+  <section class="register" id="register">
+    <span class="kicker mono">05 / Get In</span>
+    <h2>Stop reading the spec. <span>Go build it.</span></h2>
+    <p>Registration opens teams of up to 4. Solo entries welcome across every module.</p>
+    <form class="reg-form" id="reg-form">
+      <input type="email" placeholder="you@yourcollege.edu" required>
+      <button type="submit">Notify me</button>
+    </form>
+    <div class="form-msg" id="form-msg"></div>
+  </section>
+
+</main>
+
+<footer>
+  <div>© 2026 TECHFEST. ALL SYSTEMS NOMINAL.</div>
+  <div class="fsocial">
+    <a href="#">Instagram</a>
+    <a href="#">X</a>
+    <a href="#">YouTube</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="index.js">
+</script>
+</body>
+</html>
